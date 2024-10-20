@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    height: 2em;
+    text-align: center;
+  }
+  
+  .cronometro {
+    position: absolute;
+    right: 50px;
+    bottom: 460px;
+  }
+  
+  .start-btn{
+    background-color: #049b48;
+
+  }
+  .pause-btn{
+    background-color: #FFFF00;
+
+  }
+
+  .stop-btn{
+   background-color: #e70606;
+  }
+
+
+  
+  button {
+    cursor: pointer;
+  }
+  
+  body {
+    background-color: #0d0137;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .container {
+    background-color: #121214; /* Cor de fundo do container */
+    width: 90%;
+    max-width: 800px;
+
+
+    /* Define a borda com gradiente */
+    border: 2px solid transparent; /* Define a borda base como transparente */
+    border-radius: 6px; /* Adiciona arredondamento às bordas */
+    padding: 16px; /* Adiciona espaço interno */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao redor do container */
+    
+    /* Aplica o gradiente à borda */
+    border-image: linear-gradient(45deg, #0a9103, #e70606) 1; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .answer:disabled {
+    cursor: not-allowed;
+  }
+  
+  .next-question {
+    margin-top: 32px;
+  }
+  
+    
+  .button {
+    background-color: #4863f7;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+  
+    transition: filter 0.1s;
+  }
+  
+  .button:not(:disabled):hover {
+    filter: brightness(0.8);
+  }
+  
+  /* Finish game */
+  .final-message {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .final-message span {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  /* General styles */
+  .hide {
+    display: none;
+  }
+  
+  .correct {
+    background-color: #049b48;
+  }
+  
+  .incorrect {
+    background-color: #a10101;
+  }
